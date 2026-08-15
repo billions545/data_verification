@@ -45,7 +45,8 @@ function isValidRecaptchaHostname(hostname) {
 
     const allowedDomains = [
         'tiendalocal.cl',
-        'oestegeradores.com.br'
+        'oestegeradores.com.br',
+        'rbguae.com'
     ];
 
     const normalizedHostname = hostname.toLowerCase();
